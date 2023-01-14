@@ -9,9 +9,9 @@ public class CafeJava {
         
         // Menu variables (add yours below)
         double mochaPrice = 3.5;
-        double dripCoffeePrice = 4.0;
-        double lattePrice = 4.5;
-        double cappucinoPrice = 5.0;
+        double dripCoffeePrice = 4.75;
+        double lattePrice = 5.75;
+        double cappucinoPrice = 7.0;
     
         // Customer name variables (add yours below)
         String customer1 = "Cindhuri";
@@ -20,10 +20,10 @@ public class CafeJava {
         String customer4 = "Noah";
     
         // Order completions (add yours below)
-        boolean isReadyOrder1 = false;
-        boolean isReadyOrder2 = true;
-        boolean isReadyOrder3 = false;
-        boolean isReadyOrder4 = true;
+        boolean isReadyOrder1 = true;
+        boolean isReadyOrder2 = false;
+        boolean isReadyOrder3 = true;
+        boolean isReadyOrder4 = false;
     
         // APP INTERACTION SIMULATION (Add your code for the challenges below)
         // Example:
@@ -32,6 +32,7 @@ public class CafeJava {
 
         // Task 1
         System.out.println(customer1 + pendingMessage);
+        System.out.println("===============");
 
         // Task 2
         if(isReadyOrder4) {
@@ -39,8 +40,22 @@ public class CafeJava {
             System.out.println(displayTotalMessage + cappucinoPrice);
         }
         else {
-            System.out.println(customer4 + readyMessage);
+            System.out.println(customer4 + pendingMessage);
         }
+        System.out.println("===============");
 
+        // Task 3
+        System.out.println(displayTotalMessage + lattePrice*2);
+        
+        if(isReadyOrder2) {
+            System.out.println(customer2 + readyMessage);
+        }
+        else {
+            System.out.println(customer2 + pendingMessage);
+        }
+        System.out.println("===============");
+
+        // Task 4
+        System.out.println(displayTotalMessage + (lattePrice - dripCoffeePrice));
     }
 }
